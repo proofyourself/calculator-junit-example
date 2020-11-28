@@ -43,6 +43,6 @@ public class CalculatorTest {
     @Test(expected = ArithmeticException.class)
     public void shouldThrowArithmeticExceptionForDivideByZero() {
 
-        int actual = calculator.calculate("/", 2, 0);
+       calculator.calculate("/", 2, 0);
     }
 }
