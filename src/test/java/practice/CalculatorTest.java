@@ -9,7 +9,7 @@ public class CalculatorTest {
     Calculator calculator = new Calculator();
 
     @Test
-    public void doSum() {
+    public void shouldReturnCorrectResultForAdditionOperation() {
 
         int actual = calculator.calculate("+", 2, 3);
         int expected = 5;
@@ -17,7 +17,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void doMin() {
+    public void shouldReturnCorrectResultForSubtractionOperation() {
 
         int actual = calculator.calculate("-", 2, 3);
         int expected = -1;
@@ -25,7 +25,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void doMulti() {
+    public void shouldReturnCorrectResultForMultiplyOperation() {
 
         int actual = calculator.calculate("*", 2, 3);
         int expected = 6;
@@ -33,7 +33,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void doDiv() {
+    public void shouldReturnCorrectResultForDivideOperation() {
 
         int actual = calculator.calculate("+", 2, 3);
         int expected = 5;
@@ -41,7 +41,7 @@ public class CalculatorTest {
     }
 
     @Test(expected = ArithmeticException.class)
-    public void divExeption() {
+    public void shouldThrowArithmeticExceptionForDivideByZero() {
 
         int actual = calculator.calculate("/", 2, 0);
     }
